@@ -1,9 +1,20 @@
 import { useState } from "react";
 
 function AcronymGenerator() {
+  const [phrase, setPhrase] = useState("");
+  const [acronym, setAcronym] = useState("");
+
   function toAcronym(text) {
     // Implement acronym logic here
+    return text
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean)
+      .map((word) => word[0].toUpperCase())
+      .join("");
   }
+
+  const handleGenerate = () => setAcronym(toAcronym(phrase));
 
   return (
     <div>
@@ -14,9 +25,14 @@ function AcronymGenerator() {
       </p>
 
       <div>
-        <input type="text" placeholder="Enter a phrase..." />
-        <button>Generate</button>
-        <p>Result : </p>
+        <input
+          type="text"
+          placeholder="Enter a phrase..."
+          value={phrase}
+          onChange={(e) => setPhrase(e.target.value)}
+        />
+        <button onClick={handleGenerate}>Generate</button>
+        <p>Result : {acronym}</p>
       </div>
     </div>
   );

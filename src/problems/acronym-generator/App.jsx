@@ -1,5 +1,4 @@
 import AcronymGenerator from "./AcronymGenerator";
-import "./styles.css";
 
 export default function App() {
   return (
