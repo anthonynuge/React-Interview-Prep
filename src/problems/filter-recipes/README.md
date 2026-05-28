@@ -4,6 +4,8 @@ https://namastedev.com/practice/filter-recipes
 
 You are tasked with creating a simple recipe filter and cart system. You will be given a list of recipes (with information like name, rating, cuisine, and image), and you need to build a component that allows users to filter recipes by rating, view the average rating of the filtered recipes, and add recipes to a shopping cart.
 
+![Filter UI](./recipe-filter.png)
+
 ---
 
 # Requirements
