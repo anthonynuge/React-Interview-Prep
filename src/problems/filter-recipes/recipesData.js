@@ -1,4 +1,4 @@
-export default recipesData = [
+export const recipesData = [
   {
     id: 1,
     name: "Classic Margherita Pizza",

@@ -37,7 +37,9 @@ export default function Shell() {
         )}
       </header>
       {ProblemApp ? (
-        <ProblemApp />
+        <div className="problem-frame">
+          <ProblemApp />
+        </div>
       ) : slug ? (
         <p>Problem "{slug}" not found.</p>
       ) : (

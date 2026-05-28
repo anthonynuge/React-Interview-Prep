@@ -44,6 +44,11 @@ body {
   text-decoration: underline;
 }
 
+.problem-frame {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 .problem-list {
   list-style: none;
   padding: 0;
