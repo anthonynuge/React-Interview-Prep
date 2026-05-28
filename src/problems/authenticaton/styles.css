@@ -1,0 +1,43 @@
+.app {
+  width: 100%;
+  border-radius: 2rem;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(80, 150, 230);
+  padding: 10px 20px;
+  width: 100%;
+  color: white;
+}
+
+.navbar-header span {
+  font-size: 1.4rem;
+}
+
+.dashboard {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  font-weight: bold;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  background: rgb(216, 234, 240);
+  font-size: 1.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  color: rgb(80, 150, 230);
+}
+
+button:hover {
+  background: rgba(232, 240, 248, 0.938);
+}

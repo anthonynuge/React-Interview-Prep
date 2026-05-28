@@ -2,6 +2,7 @@ import React from "react";
 import { UserProvider } from "./userContext";
 import Navbar from "./Navbar";
 import Dashboard from "./Dashboard";
+import "./styles.css";
 
 const App = () => {
   return (

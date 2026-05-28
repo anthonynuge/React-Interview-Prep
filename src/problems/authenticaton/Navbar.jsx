@@ -2,10 +2,16 @@ import React, { useContext } from "react";
 import { UserContext } from "./userContext";
 
 const Navbar = () => {
+  const { isLoggedIn, login, logout } = useContext(UserContext);
+
   return (
-    <nav>
+    <header className="navbar-header">
       <h1>App</h1>
-    </nav>
+      {isLoggedIn && <span>Welcome, User!</span>}
+      <button onClick={isLoggedIn ? logout : login}>
+        {isLoggedIn ? "Logout" : "Login"}
+      </button>
+    </header>
   );
 };
 
